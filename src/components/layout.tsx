@@ -2,6 +2,7 @@ import { getSystemInfo } from "zmp-sdk"
 import { App, AnimationRoutes, Route, SnackbarProvider, ZMPRouter } from "zmp-ui"
 import { AppProps } from "zmp-ui/app"
 import TrangChPage from "@/pages/index"
+import Trang2Page from "@/pages/trang-2"
 
 const Layout = () => {
   const systemInfo = (() => {
@@ -14,6 +15,7 @@ const Layout = () => {
         <ZMPRouter>
           <AnimationRoutes>
             <Route path="/" element={<TrangChPage />} />
+            <Route path="/trang-2" element={<Trang2Page />} />
           </AnimationRoutes>
         </ZMPRouter>
       </SnackbarProvider>
